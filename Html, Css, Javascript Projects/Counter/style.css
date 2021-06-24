@@ -9,4 +9,48 @@ body{
     min-height: 100vh;
     background-size: cover;
     background-position: center center;
+    position: relative;
+}
+h2{
+    position: absolute;
+    margin-top: 15%;
+    width: 30%;
+    left: 35%;
+    text-align: center;    
+    margin-left: auto;
+}
+.counter{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20%;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    background: transparent;
+}
+.counter > div{
+    width: fit-content; 
+    background: transparent;
+    color: brown;
+}
+p,span,h2{
+    background: transparent;
+    font-size:1.8rem;
+    color: #333;
+}
+@media only screen and (max-width: 767px) {
+
+    h2{       
+        margin-top: 15%;
+        width: 90%;
+        left: 5%;
+    }
+    .counter{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 150px;
+    }
 }
