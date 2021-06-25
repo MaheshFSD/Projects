@@ -12,7 +12,36 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="quiz-container" id="quiz-container">
+        <div class="quiz-header">
+            <h3 id="question">Question Text</h3>
+            <ul>
+                <li>
+                    <input class="answer" type="radio" id="a" name="answer" />
+                    <label id="a_option" for="a" >Option</label>
+                </li>
+                <li>
+                    <input class="answer" type="radio" id="b" name="answer" />
+                    <label id="b_option" for="b" >Option</label>
+                </li>
+                <li>
+                    <input class="answer" type="radio" id="c" name="answer" />
+                    <label id="c_option" for="c" >Option</label>
+                </li>
+                <li>
+                    <input class="answer" type="radio" id="d" name="answer" />
+                    <label id="d_option" for="d" >Option</label>
+                </li>
+            </ul>
+        </div>
 
+        <button id="sub">Submit</button>
+    </div>
+    <div class="resultOff" id="resultOff" >
+        <h3>You finished your test. Below is your test result</h3>
+        <h2 class="final" id="final"></h2>
+        <h3></h3>
+        <button class="back" id="back">Goback</button>
+    </div>
 </body>
 </html>
