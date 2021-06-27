@@ -18,6 +18,8 @@ img{
 }
 .mobile-container{
     background-color: whitesmoke;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 2px rgba21;
     width: 400px;
 }
 header{
@@ -38,11 +40,19 @@ header button{
     background-color: rgb(255, 255, 255);
     color: #333;
     font-size: large;
-    margin-left: 10px;
+    margin-left: 10px;  
+}
+.fav-container{
+    color: red;
+    background-color: rgb(255, 255, 255);
+    height: 40%;
+}
+.fav-text{
+    text-align:center;
 }
 .fav-container ul{
     display: flex;
-
+    justify-content: center;
 }
 .fav-container ul li img{
     width: 60px;
@@ -55,4 +65,46 @@ header button{
     list-style: none;
     text-align: center;
     margin:0 10px;
+}
+.meal{
+    margin: 1rem;
+    border-radius: 3px;
+}
+.meal-header{
+    position: relative;
+    text-align: center;
+    background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+   
+}
+.meal .random{
+    position: absolute;
+    top: 10px;
+    padding: 0.25rem 0.5rem;
+    background-color: whitesmoke;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.meal-header img{
+    object-fit: cover;
+    height: 250px;
+    width: 100%;   
+    margin: auto;
+}
+.meal-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0px auto;
+    padding: 10px;
+}
+.meal-body .btn{
+    font-size: 1rem;
+    border: none;
+    color: #d3d4d6;
+    background-color: rgb(182, 182, 182);
+    cursor: pointer;
+}
+.meal-body .btn.active{
+    background-color: #c265b2;
 }
